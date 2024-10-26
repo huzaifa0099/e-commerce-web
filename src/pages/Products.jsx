@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import { FaFilter } from "react-icons/fa";
 import Card from "../components/Card";
 

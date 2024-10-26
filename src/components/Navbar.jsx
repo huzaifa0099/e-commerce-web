@@ -78,7 +78,7 @@ const Navbar = () => {
 
       <div className="pt-4">
         <ul className="lg:flex items-center justify-between text-Black hidden">
-          {navItems.map(({title, path}) => (
+          {navItems.map(({title}) => (
             <li key={title}>
               <Link href={"/"} className="hover:text-orange-400">
               {title}
@@ -92,7 +92,7 @@ const Navbar = () => {
 
       <div>
       <ul className={`bg-Black text-white px-4 py-2 rounded ${isMenuOpen ? "" : "hidden"}`}>
-          {navItems.map(({title, path}) => (
+          {navItems.map(({title}) => (
             <li key={title} className="hover:text-orange-500 my-3 cursor-pointer text-center">
               <Link href={"/"} >
               {title}

@@ -40,7 +40,7 @@ const SingleProduct = () => {
           fetchData();
     }, [id])
 
-    const {image, title, category, price} = products;
+    const {image, title, price} = products;
 
 
   return (
