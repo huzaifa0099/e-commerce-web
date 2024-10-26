@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Card = ({ filteredItems }) => {
   return (
@@ -7,7 +8,7 @@ const Card = ({ filteredItems }) => {
       {filteredItems.slice(0, 8).map((item) => (
         <div key={item.id}>
           <Link href={`/shop/${item.id}`}>
-            <img
+            <Image
               src={item.image}
               alt={item.title}
               className="mx-auto w-full hover:scale-105 transition-all duration-300"

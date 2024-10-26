@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Link from "next/link"
+import Image from 'next/image';
 const BestSellers = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
@@ -66,7 +67,7 @@ const BestSellers = () => {
             bestSellers.map((product) => (
                 <SwiperSlide key={product.id}>
                               <Link href={`/shop/${product.id}`}>
-            <img
+            <Image
               src={product.image}
               alt={product.title}
               className="mx-auto w-full hover:scale-105 transition-all duration-300"

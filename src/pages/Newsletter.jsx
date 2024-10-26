@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Newsletter = () => {
   return (
@@ -10,12 +11,12 @@ const Newsletter = () => {
 
         {/* insta grid */}
         <div className='flex flex-wrap gap-4 items-center justify-center mb-20'>
-            <Link href={"#"} alt=""><img src="/instagram/img1.png" alt="" /></Link>
-            <Link href={"#"} alt=""><img src="/instagram/img2.png" alt="" /></Link>
-            <Link href={"#"} alt=""><img src="/instagram/img3.png" alt="" /></Link>
-            <Link href={"#"} alt=""><img src="/instagram/img4.png" alt="" /></Link>
-            <Link href={"#"} alt=""><img src="/instagram/img5.png" alt="" /></Link>
-            <Link href={"#"} alt=""><img src="/instagram/img6.png" alt="" /></Link>
+            <Link href={"#"} alt=""><Image src="/instagram/img1.png" alt="" /></Link>
+            <Link href={"#"} alt=""><Image src="/instagram/img2.png" alt="" /></Link>
+            <Link href={"#"} alt=""><Image src="/instagram/img3.png" alt="" /></Link>
+            <Link href={"#"} alt=""><Image src="/instagram/img4.png" alt="" /></Link>
+            <Link href={"#"} alt=""><Image src="/instagram/img5.png" alt="" /></Link>
+            <Link href={"#"} alt=""><Image src="/instagram/img6.png" alt="" /></Link>
         </div>
 
         {/* newsletter */}

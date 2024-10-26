@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -18,7 +19,7 @@ const Catogary = () => {
       <div className="flex items-center justify-around flex-wrap gap-2 py-5">
         {companyLogo.map(({ id, img }) => (
           <div key={id}>
-            <img src={img} alt="" height={300} />
+            <Image src={img} alt="" height={300} />
           </div>
         ))}
       </div>
@@ -30,34 +31,34 @@ const Catogary = () => {
         </p>
         <div>
           <Link href="/">
-            <img src="/category/image1.png" alt="" className="w-full hover:scale-105 transition-all duration-200" />
+            <Image src="/category/image1.png" alt="" className="w-full hover:scale-105 transition-all duration-200" />
           </Link>
         </div>
         <div className="md:w-1/2">
           <div className="grid grid-cols-2 gap-2">
             <Link href="/">
-              <img
+              <Image
                 src="/category/image2.png"
                 alt=""
                 className="hover:scale-105 transition-all duration-200"
               />
             </Link>
             <Link href="/">
-              <img
+              <Image
                 src="/category/image3.png"
                 alt=""
                 className="hover:scale-105 transition-all duration-200"
               />
             </Link>
             <Link href="/">
-              <img
+              <Image
                 src="/category/image4.png"
                 alt=""
                 className="hover:scale-105 transition-all duration-200"
               />
             </Link>
             <Link href="/">
-              <img
+              <Image
                 src="/category/image5.png"
                 alt=""
                 className="hover:scale-105 transition-all duration-200"

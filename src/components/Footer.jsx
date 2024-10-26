@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import Image from "next/image";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -13,7 +14,7 @@ const Footer = () => {
           {/* company info */}
           <div className="md:w-[400px]">
             <Link href="/">
-              <img src="/logo.svg" alt="" />
+              <Image src="/logo.svg" alt="" />
             </Link>
             <p className="my-8 text-Black/75">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
