@@ -47,7 +47,7 @@ const Navbar = () => {
         <FaSearch className="text-Black w-5 h-5 cursor-pointer hidden md:block"/>
         {/* logo section */}
         <Link href={"/"}>
-          <Image src={logo} />
+          <Image src={logo} alt="Logo" />
         </Link>
 
         {/* account and shopping btn */}
